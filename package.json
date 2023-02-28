@@ -1,0 +1,38 @@
+{
+  "name": "chat-app-udemy-course",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server",
+    "start": "node server",
+    "client:start": "cd client && npm run start",
+    "client:dev": "cd client && npm run dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "prisma": "^4.10.1"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.4.0",
+    "@graphql-tools/schema": "^9.0.16",
+    "@prisma/client": "^4.10.1",
+    "apollo-server": "^3.11.1",
+    "apollo-server-express": "^3.11.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "graphql": "^16.6.0",
+    "graphql-subscriptions": "^2.0.0",
+    "graphql-ws": "^5.11.3",
+    "jsonwebtoken": "^9.0.0",
+    "ws": "^8.12.1"
+  },
+  "engines": {
+    "node": "18.12.0"
+  }
+}

@@ -1,0 +1,8 @@
+overwrite: true
+schema: "http://localhost:8080"
+generates:
+  graphQl/types-and-hooks.tsx:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo
