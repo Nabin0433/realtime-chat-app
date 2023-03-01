@@ -22,13 +22,13 @@ function MyApp({ Component, pageProps }) {
     typeof window !== "undefined"
       ? new GraphQLWsLink(
         createClient({
-          url: 'ws://localhost:8080/graphql',
+          url: 'ws://chat-server-db0l.onrender.com/graphql',
         })
       )
       : null;
 
   const httpLink = createHttpLink({
-    uri: 'http://localhost:8080/graphql',
+    uri: 'https://chat-server-db0l.onrender.com/graphql',
   });
 
   const splitLink =
