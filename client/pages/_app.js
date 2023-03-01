@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
     typeof window !== "undefined"
       ? new GraphQLWsLink(
         createClient({
-          url: 'ws://chat-server-db0l.onrender.com/graphql',
+          url: 'wss://chat-server-db0l.onrender.com/graphql',
         })
       )
       : null;
